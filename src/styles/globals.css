@@ -1,3 +1,14 @@
+:root {
+  /*-------------- PALETA DE CORES ------------------*/
+  --blue: #3772FF;
+  --green: #36D6AD;
+  --coral: #FC7071;
+  --cream: #FCF0E3;
+  --grey: #737380;
+  --light-grey: #BCBCBC;
+  --withe: #F7F7F7;
+}
+
 html,
 body {
   padding: 0;
