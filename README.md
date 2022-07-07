@@ -1,4 +1,4 @@
-<h1>Adopet plataform</h1>
+<h1>Plataforma de adoção de animais Adopet</h1>
 <h3 align='center'>🚧 Project in building ⛏️ 🚧</h3>
 <hr/>
 <footer>
