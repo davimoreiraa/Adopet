@@ -7,6 +7,7 @@ export default function Index() {
       <Head>
         <title>Adopet</title>
         <meta name="description" content="Adoption pets website" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <div>
         <Home />

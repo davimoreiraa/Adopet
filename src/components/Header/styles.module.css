@@ -1,0 +1,15 @@
+.header_body {
+  z-index: 0;
+  width: 100vw;
+}
+
+
+.icons_container {
+  margin-top: 70px;
+}
+
+@media only screen and (max-width: 768px) {
+  .logo_container {
+    display: none;
+  }
+}
