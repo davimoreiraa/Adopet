@@ -11,7 +11,7 @@ export default function Header() {
   return (
     <header className={`${styles.header_body} position-absolute top-0 start-0`}>
       <div className={`${styles.border_container} col-10 col-sm-7 col-lg-5 col-xl-4`} >
-       <BordaTop/>  
+        <h1><BordaTop/></h1>
       </div>
       <nav className={`${styles.icons_container} col-4 col-sm-5 col-lg-4 col-xl-3 d-flex justify-content-around  position-absolute top-0 start-0`}>
         <div className={`${styles.logo_container}`} >
