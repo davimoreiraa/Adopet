@@ -10,12 +10,12 @@ import { MensagemIcon } from '../../assets/MensagemIcon'
 export default function Header() {
   return (
     <header className={`${styles.header_body} position-absolute top-0 start-0`}>
-      <div className={`${styles.border_container} col-11 col-sm-8 col-lg-6 col-xl-5`} >
+      <div className={`${styles.border_container} col-10 col-sm-7 col-lg-5 col-xl-4`} >
        <BordaTop/>  
       </div>
-      <nav className={`${styles.icons_container} col-4 col-sm-5 col-lg-4 col-xl-3 d-flex justify-content-around justify-content-md-between position-absolute top-0 start-0`}>
+      <nav className={`${styles.icons_container} col-4 col-sm-5 col-lg-4 col-xl-3 d-flex justify-content-around  position-absolute top-0 start-0`}>
         <div className={`${styles.logo_container}`} >
-          <Logo />
+          <Logo width='128px'/>
         </div>
         <CasaIcon/>
         <MensagemIcon />
