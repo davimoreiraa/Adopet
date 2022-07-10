@@ -9,6 +9,9 @@ import Button from '../../components/Button'
 /* ------------------ ICONS -------------------*/
 import { Logo } from '../../assets/Logo'
 
+/* ------------------ IMAGES -------------------*/
+
+
 export default function Home() {
   return (
     <div className={`${styles.home_body} `}>
@@ -25,6 +28,16 @@ export default function Home() {
                 Adotar pode mudar uma vida. Que tal buscar seu novo melhor amigo hoje? Vem com a gente!
               </p>
             </div>
+          </div>
+        </div>
+        <div className={`d-flex justify-content-center`}>
+          <div className={`${styles.btn_container} shadow col-8 col-sm-6 col-md-4 col-xl-3`}>
+            <Button content='Já tenho conta'/>
+          </div>
+        </div>
+        <div className={`d-flex justify-content-center`}>
+          <div className={`${styles.btn_container} shadow col-8 col-sm-6 col-md-4 col-xl-3`}>
+            <Button content='Quero me cadastrar'/>
           </div>
         </div>
       </main>

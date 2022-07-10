@@ -1,6 +1,6 @@
 .footer {
   width: 100vw;
-  height: 90px;
+  height: 80px;
   background-color: var(--green);
   color: #fff;
   font-family: 'Poppins', sans-serif;
@@ -9,10 +9,4 @@
 
 .year {
   margin-bottom: 0;
-}
-
-@media only screen and (min-width: 1440px) {
-  .footer {
-    height: 80px;
-  }
 }
