@@ -10,14 +10,17 @@ import { Logo } from '../../assets/Logo'
 
 export default function Home() {
   return (
-    <body className={`${styles.home_body} `}>
+    <div className={`${styles.home_body} `}>
       <Header/>
       <main className={`${styles.home_content} position-relative d-flex justify-content-center`}>
-        <div className={`${styles.logo_container}`}>
-          <Logo width='100%'/>
+        <div className={`${styles.logo_container} `}>
+          <h1><Logo width='100%'/></h1>
+          <div className={`d-flex justify-content-center`}>
+            <h2 className={`${styles.welcome_msg}`}>Boas-vindas</h2>
+          </div>
         </div>
       </main>
       <Footer />
-    </body>
+    </div>
   )
 }
