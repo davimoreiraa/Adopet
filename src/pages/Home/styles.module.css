@@ -1,4 +1,29 @@
-.body {
+.home_body {
   margin: 0;
+  background-color: var(--blue);
+  max-height: 100vh;
 }
 
+.logo_container {
+  width: 186px;
+}
+
+.home_content {
+  margin-top: 130px;
+}
+
+@media only screen and (min-width: 768px) {
+  .logo_contaier {
+    width: 251px;
+  }
+
+  .home_content {
+    margin-top: 283px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .home_content {
+    margin-top: 130px;
+  }
+}
