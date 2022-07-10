@@ -5,15 +5,15 @@
   background-color: var(--blue);
   max-height: 100vh;
   font-family: Poppins, sans-serif;
-}
-
-.logo_container {
-  width: 186px;
   color: #fff;
 }
 
 .home_content {
   padding-top: 130px;
+}
+
+.logo {
+  margin-bottom: 0;
 }
 
 .welcome_msg {
@@ -29,10 +29,6 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .logo_contaier {
-    width: 251px;
-  }
-
   .home_content {
     padding-top: 163px;
   }
