@@ -4,6 +4,7 @@
   margin: 0;
   background-color: var(--blue);
   max-height: 100vh;
+  font-family: Poppins, sans-serif;
 }
 
 .logo_container {
@@ -16,9 +17,15 @@
 }
 
 .welcome_msg {
-  font-family: Poppins, sans-serif;
   font-weight: 500;
   font-size: 26px;
+  margin-top: 18px;
+}
+
+.description {
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 10px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -27,16 +34,20 @@
   }
 
   .home_content {
-    padding-top: 283px;
+    padding-top: 163px;
   }
 
   .welcome_msg {
     font-size: 28px;
   }
+
+  .description {
+    margin-top: 16px;
+  }
 }
 
 @media only screen and (min-width: 1440px) {
   .home_content {
-    padding-top: 130px;
+    padding-top: 140px;
   }
 }
