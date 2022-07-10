@@ -9,7 +9,7 @@
 }
 
 .home_content {
-  padding-top: 130px;
+  padding-top: 100px;
 }
 
 .logo {
@@ -32,15 +32,19 @@
   margin-top: 15px;
 }
 
+.animals_container {
+  bottom: 67px;
+}
+
 @media only screen and (min-width: 768px) {
   .home_content {
-    padding-top: 163px;
+    padding-top: 103px;
   }
 
   .welcome_msg {
     font-size: 28px;
   }
-
+  
   .description {
     margin-top: 16px;
   }
@@ -50,4 +54,10 @@
   .home_content {
     padding-top: 140px;
   }
+}
+
+@media only screen and (max-width: 260px) {
+  .animals_container {
+    bottom: 50px;
+  }  
 }

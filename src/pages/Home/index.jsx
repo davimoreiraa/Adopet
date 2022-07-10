@@ -8,14 +8,18 @@ import Button from '../../components/Button'
 
 /* ------------------ ICONS -------------------*/
 import { Logo } from '../../assets/Logo'
-
-/* ------------------ IMAGES -------------------*/
-
+import { Animais } from '../../assets/Animais'
+import { Animais } from '../../assets/Animais'
 
 export default function Home() {
   return (
     <div className={`${styles.home_body} `}>
       <Header/>
+      <div className={`${styles.animals_container} col-12 position-absolute d-flex justify-content-center`}>
+        <div className={`col-5 col-sm-4 col-md-3  col-xl-2`}>
+          <Animais />
+        </div>
+      </div>
       <main className={`${styles.home_content} position-relative `}>
         <div className={`d-flex justify-content-center`}>
           <div className={`col-10 col-sm-8 col-md-5 col-xl-4 col-xxl-3`}>
