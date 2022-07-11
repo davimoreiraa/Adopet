@@ -9,21 +9,26 @@ import Button from '../../components/Button'
 /* ------------------ ICONS -------------------*/
 import { Logo } from '../../assets/Logo'
 import { Animais } from '../../assets/Animais'
-import { Animais } from '../../assets/Animais'
+import { SideBorder } from '../../assets/SideBorder'
 
 export default function Home() {
   return (
     <div className={`${styles.home_body} `}>
       <Header/>
       <div className={`${styles.animals_container} col-12 position-absolute d-flex justify-content-center`}>
-        <div className={`col-5 col-sm-4 col-md-3  col-xl-2`}>
+        <div className={`col-5 col-sm-4 col-md-3 col-xl-2`}>
           <Animais />
         </div>
       </div>
+        <div className={`${styles.side_border_container} d-flex align-items-center position-absolute end-0 top-0`}> 
+          <SideBorder />
+        </div>
       <main className={`${styles.home_content} position-relative `}>
         <div className={`d-flex justify-content-center`}>
           <div className={`col-10 col-sm-8 col-md-5 col-xl-4 col-xxl-3`}>
-            <h1 className={styles.logo}><Logo width='100%'/></h1>
+            <div className={styles.logo_container}>
+             <Logo width='100%'/>
+            </div>
             <div className={`d-flex justify-content-center`}>
               <h2 className={`${styles.welcome_msg}`}>Boas-vindas</h2>
             </div>

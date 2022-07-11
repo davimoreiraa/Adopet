@@ -16,6 +16,10 @@
   margin-bottom: 0;
 }
 
+.logo_container {
+  height: 46px;
+}
+
 .welcome_msg {
   font-weight: 500;
   font-size: 26px;
@@ -36,9 +40,17 @@
   bottom: 67px;
 }
 
+.side_border_container {
+  height: 100vh;
+}
+
 @media only screen and (min-width: 768px) {
   .home_content {
     padding-top: 103px;
+  }
+
+  .logo_container {
+    height: 62px;
   }
 
   .welcome_msg {
@@ -60,4 +72,46 @@
   .animals_container {
     bottom: 50px;
   }  
+}
+
+@media only screen and (min-width: 406px) {
+  .side_border_container {
+    width: 50px;
+  } 
+}
+
+@media only screen and (min-width: 610px) {
+  .side_border_container {
+    width: 70px;
+  } 
+}
+
+@media only screen and (min-width: 870px) {
+  .side_border_container {
+    width: 75px;
+  } 
+}
+
+@media only screen and (min-width: 870px) {
+  .side_border_container {
+    width: 80px;
+  } 
+}
+
+@media only screen and (min-width: 1200px) {
+  .side_border_container {
+    width: 90px;
+  } 
+}
+
+@media only screen and (min-width: 1500px) {
+  .side_border_container {
+    width: 100px;
+  } 
+}
+
+@media only screen and (min-width: 1700px) {
+  .side_border_container {
+    width: 120px;
+  } 
 }
