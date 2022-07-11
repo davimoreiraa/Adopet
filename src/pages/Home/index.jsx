@@ -1,7 +1,6 @@
 /* ------------------ STYLES -------------------*/
 import styles from './styles.module.css'
 
-/* ------------------ COMPONENTS -------------------*/
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 import Button from '../../components/Button'
@@ -20,7 +19,7 @@ export default function Home() {
           <Animais />
         </div>
       </div>
-        <div className={`${styles.side_border_container} d-flex align-items-center position-absolute end-0 top-0`}> 
+        <div className={`${styles.side_border_container} col-2 d-flex align-items-center position-absolute end-0 top-0`}> 
           <SideBorder />
         </div>
       <main className={`${styles.home_content} position-relative `}>
@@ -41,12 +40,12 @@ export default function Home() {
         </div>
         <div className={`d-flex justify-content-center`}>
           <div className={`${styles.btn_container} shadow col-8 col-sm-6 col-md-4 col-xl-3`}>
-            <Button content='Já tenho conta'/>
+            <Button content='Já tenho conta' href='/register'/>
           </div>
         </div>
         <div className={`d-flex justify-content-center`}>
           <div className={`${styles.btn_container} shadow col-8 col-sm-6 col-md-4 col-xl-3`}>
-            <Button content='Quero me cadastrar'/>
+            <Button content='Quero me cadastrar' href='/register'/>
           </div>
         </div>
       </main>
