@@ -1,4 +1,4 @@
-export const SideBorder= () => {
+export const SideBorder = () => {
   return (
     <svg width="100%" height="auto" viewBox="0 0 71 417" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M30.2283 154.5C23.0283 94.1 64.2283 37 85.7283 16V397.5C12.9283 376.3 3.03751 324.784 22.7282 295.5C53.9955 249 37.4283 214.9 30.2283 154.5Z" fill="#36D6AD"/>
