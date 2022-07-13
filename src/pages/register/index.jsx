@@ -5,6 +5,7 @@ import styles from './styles.module.css'
 import Head from 'next/head'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
+import Input from '../../components/Input'
 
 /* ------------------ ICONS -------------------*/
 import { Patas } from '../../assets/Patas'
@@ -16,7 +17,7 @@ export default function Register() {
   return (
     <div>
       <Head>
-        <title>Adopet</title>
+        <title>Adopet 🐶 | Registrar</title>
         <meta name="description" content="Adoption pets website" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -52,6 +53,34 @@ export default function Register() {
               </div>
             </div>
           </div>
+          <form className={`col-12 d-flex justify-content-center`}>
+            <div className={`col-10`}>
+              <div className={`${styles.margin_bottom_field} text-center`}>
+                <label className={`${styles.label} `}>E-mail</label>
+                <div className={`col-12`}>
+                  <Input placeholder='Escolha seu melhor email' dark={true} name='email' type='email'/>
+                </div>
+              </div>
+              <div className={`${styles.margin_bottom_field} text-center`}>
+                <label className={`${styles.label} `}>E-mail</label>
+                <div className={`col-12`}>
+                  <Input placeholder='Escolha seu melhor email' dark={true} name='email' type='email'/>
+                </div>
+              </div>
+              <div className={`${styles.margin_bottom_field} text-center`}>
+                <label className={`${styles.label} `}>E-mail</label>
+                <div className={`col-12`}>
+                  <Input placeholder='Escolha seu melhor email' dark={true} name='email' type='email'/>
+                </div>
+              </div>
+              <div className={`${styles.margin_bottom_field} text-center`}>
+                <label className={`${styles.label} `}>E-mail</label>
+                <div className={`col-12`}>
+                  <Input placeholder='Escolha seu melhor email' dark={true} name='email' type='email'/>
+                </div>
+            </div>
+            </div>
+          </form>
         </main>
         <Footer />
       </div>

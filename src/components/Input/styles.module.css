@@ -1,0 +1,12 @@
+.input {
+  background-color: #fff;
+  color: var(--ligh-grey);
+  border: none;
+  height: 40px;
+  text-align: center;
+  width: 100%
+}
+
+.dark_background {
+  background-color: var(--dark-input-background);
+}
