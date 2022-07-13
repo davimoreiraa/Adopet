@@ -28,7 +28,7 @@ export default function Home() {
           rel="stylesheet"
         />
       </Head>
-      <div className={`${styles.home_body} `}>
+      <div className={`${styles.home_body} position-relative`}>
         <Header/>
         <div className={`${styles.animals_container} col-12 position-absolute d-flex justify-content-center`}>
           <div className={`col-5 col-sm-4 col-md-3 col-xl-2`}>
@@ -65,7 +65,9 @@ export default function Home() {
             </div>
           </div>
         </main>
-        <Footer />
+        <div className={` position-absolute bottom-0`}>
+          <Footer />
+        </div>
       </div>
     </div>
   )

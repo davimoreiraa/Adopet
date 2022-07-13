@@ -27,7 +27,7 @@ export default function Register() {
           rel="stylesheet"
         />
       </Head>
-      <div className={`${styles.register_body}`}>
+      <div className={`${styles.register_body} position-relative`}>
         <Header />
         <div className={`${styles.side_border_container} d-none d-md-inline col-2 d-flex align-items-center position-absolute end-0 top-0`}> 
           <SideBorder />
@@ -82,7 +82,9 @@ export default function Register() {
             </div>
           </form>
         </main>
-        <Footer />
+        <div className={`${styles.footer_container} position-absolute bottom-0`}>
+          <Footer />
+        </div>
       </div>
     </div>
   )

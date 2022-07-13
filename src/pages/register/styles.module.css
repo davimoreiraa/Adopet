@@ -1,6 +1,6 @@
 .register_body {
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   background-color: var(--background);
   font-family: Poppins, sans-serif;
   color: #fff;
@@ -21,6 +21,7 @@
 
 .content {
   padding-top: 100px;
+  padding-bottom: 80px;
 }
 
 .container {
