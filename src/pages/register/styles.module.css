@@ -46,6 +46,7 @@
 }
 
 .label {
+  font-size: 1.19rem;
   color: var(--grey);
   margin-bottom: 6px;
 }

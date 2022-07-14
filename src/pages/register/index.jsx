@@ -62,21 +62,21 @@ export default function Register() {
                 </div>
               </div>
               <div className={`${styles.margin_bottom_field} text-center`}>
-                <label className={`${styles.label} `}>E-mail</label>
+                <label className={`${styles.label} `}>Nome</label>
                 <div className={`col-12`}>
-                  <Input placeholder='Escolha seu melhor email' dark={true} name='email' type='email'/>
+                  <Input placeholder='Digite seu nome completo' dark={true} name='name' type='text'/>
                 </div>
               </div>
               <div className={`${styles.margin_bottom_field} text-center`}>
-                <label className={`${styles.label} `}>E-mail</label>
+                <label className={`${styles.label} `}>Senha</label>
                 <div className={`col-12`}>
-                  <Input placeholder='Escolha seu melhor email' dark={true} name='email' type='email'/>
+                  <Input placeholder='Crie uma senha' dark={true} name='password' type='password'/>
                 </div>
               </div>
               <div className={`${styles.margin_bottom_field} text-center`}>
-                <label className={`${styles.label} `}>E-mail</label>
+                <label className={`${styles.label} `}>Confirme sua senha</label>
                 <div className={`col-12`}>
-                  <Input placeholder='Escolha seu melhor email' dark={true} name='email' type='email'/>
+                  <Input placeholder='Repita a senha criada acima' dark={true} name='email' type='email'/>
                 </div>
             </div>
             </div>

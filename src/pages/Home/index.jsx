@@ -12,8 +12,6 @@ import { Logo } from '../../assets/Logo'
 import { Animais } from '../../assets/Animais'
 import { SideBorder } from '../../assets/SideBorder'
 
-
-
 export default function Home() {
   return (
     <div>
