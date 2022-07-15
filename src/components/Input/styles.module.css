@@ -11,3 +11,11 @@
 .dark_background {
   background-color: var(--dark-input-background);
 }
+
+.input::placeholder {
+  font-size: 0.9rem;
+}
+
+.icon_container {
+  color: orange;
+}
