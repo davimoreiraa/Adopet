@@ -16,6 +16,13 @@
   font-size: 0.9rem;
 }
 
-.icon_container {
-  color: orange;
+.eye_icon {
+  color: #999999;
+  margin-left: -40px; 
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.display_none {
+  display: none;
 }

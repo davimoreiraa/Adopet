@@ -76,9 +76,10 @@ export default function Register() {
               <div className={`${styles.margin_bottom_field} text-center`}>
                 <label className={`${styles.label} `}>Confirme sua senha</label>
                 <div className={`col-12`}>
-                  <Input placeholder='Repita a senha criada acima' dark={true} name='email' type='email'/>
+                  <Input placeholder='Repita a senha criada acima' dark={true} name='confirm password' type='password'/>
                 </div>
-            </div>
+              </div>
+              {/* incluir required em cada input */}
             </div>
           </form>
         </main>
