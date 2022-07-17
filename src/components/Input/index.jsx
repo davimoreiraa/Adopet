@@ -19,21 +19,14 @@ export default function Input(props) {
         name={props.name}
         />
         {
-          showPassword == 'password' ? (
+          props.type == 'password' ? (
             <i>
-              <span className={`${styles.eye_icon}`} onClick={setShowPassword(!showPassword)}>
-                <AiFillEye/>
+              <span className={`${styles.eye_icon}`} 
+              onClick={() => { setShowPassword(!showPassword) }}>
+                {showPassword ? <AiFillEye/> : <AiFillEyeInvisible/>}
               </span>
             </i>
-          )
-          :
-          (
-            <i className={`${props.type != 'password' ? styles.display_none : ''}`}>
-              <span className={`${styles.eye_icon}`}>
-                <AiFillEyeInvisible/>
-              </span>
-            </i>
-          )
+          ) : <></>
         }
     </div>
   )
