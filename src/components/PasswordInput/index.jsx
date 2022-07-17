@@ -13,11 +13,15 @@ export default function Input(props) {
   return (
     <div>
       <input 
-        className={`${props.dark ? styles.dark_background : ""} ${styles.input} shadow-sm rounded`} 
+        className={`${props.dark ? styles.dark_background : ""} ${styles.input} shadow-sm rounded text-center`} 
         placeholder={props.placeholder} 
-        type={props.type}
+        type={showPassword ? 'password' : 'text'}
         name={props.name}
         />
+        <span className={`${styles.eye_icon} position-absolute`} 
+        onClick={() => { setShowPassword(!showPassword) }}>
+          {showPassword ? <AiFillEye/> : <AiFillEyeInvisible/>}
+        </span>
     </div>
   )
 }

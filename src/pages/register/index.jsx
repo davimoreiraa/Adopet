@@ -6,6 +6,7 @@ import Head from 'next/head'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 import Input from '../../components/Input'
+import PasswordInput from '../../components/PasswordInput'
 
 /* ------------------ ICONS -------------------*/
 import { Patas } from '../../assets/Patas'
@@ -70,13 +71,13 @@ export default function Register() {
               <div className={`${styles.margin_bottom_field} text-center`}>
                 <label className={`${styles.label} `}>Senha</label>
                 <div className={`col-12`}>
-                  <Input placeholder='Crie uma senha' dark={true} name='password' type='password'/>
+                  <PasswordInput placeholder='Crie uma senha' dark={true} name='password' type='password'/>
                 </div>
               </div>
               <div className={`${styles.margin_bottom_field} text-center`}>
                 <label className={`${styles.label} `}>Confirme sua senha</label>
                 <div className={`col-12`}>
-                  <Input placeholder='Repita a senha criada acima' dark={true} name='confirm password' type='password'/>
+                  <PasswordInput placeholder='Repita a senha criada acima' dark={true} name='confirm password' type='password'/>
                 </div>
               </div>
               {/* incluir required em cada input */}
