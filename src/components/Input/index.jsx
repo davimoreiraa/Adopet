@@ -1,15 +1,7 @@
 /* ------------------ STYLES -------------------*/
 import styles from './styles.module.css'
 
-/* ------------------ RESOURCES -------------------*/
-import { useState } from 'react'
-
-/* ------------------ ICONS -------------------*/
-import { AiFillEye, AiFillEyeInvisible } from 'react-icons/ai';
-
 export default function Input(props) {
-  const [showPassword, setShowPassword] = useState(props.type)
-
   return (
     <div>
       <input 
@@ -17,6 +9,7 @@ export default function Input(props) {
         placeholder={props.placeholder} 
         type={props.type}
         name={props.name}
+        required={props.required}
         />
     </div>
   )
