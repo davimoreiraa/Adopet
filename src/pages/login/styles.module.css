@@ -1,4 +1,4 @@
-.register_body {
+.login_body {
   width: 100vw;
   min-height: 100vh;
   background-color: var(--background);
@@ -51,12 +51,23 @@
   margin-bottom: 6px;
 }
 
+.forgot_password {
+  color: var(--coral);
+  cursor: pointer;
+}
+
+
+.forgot_password:hover {
+  color: var(--coral);
+}
+
 .submit_btn_container {
   width: 150px;
   margin-bottom: 30px;
   margin-top: 13.5px;
 }
 
+/* --------------- MEDIA QUERY ----------------- */
 @media only screen and (min-width: 768px) {
   .patas_container {
     width: 184px;

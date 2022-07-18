@@ -1,9 +1,6 @@
 /* ------------------ STYLES -------------------*/
 import styles from './styles.module.css'
 
-/* ------------------ RESOURCES -------------------*/
-import { useState } from 'react'
-
 /* ------------------ COMPONENTS -------------------*/
 import Head from 'next/head'
 import Header from '../../components/Header'
@@ -18,11 +15,11 @@ import { SideBorder } from '../../assets/SideBorder'
 import { LeftBorder } from '../../assets/LeftBorder'
 import { LogoAzul } from '../../assets/LogoAzul'
 
-export default function Register() {
+export default function Login() {
   return (
     <div>
       <Head>
-        <title>Adopet 🐶 | Registrar</title>
+        <title>Adopet 🐶 | Login</title>
         <meta name="description" content="Adoption pets website" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -32,7 +29,7 @@ export default function Register() {
           rel="stylesheet"
         />
       </Head>
-      <div className={`${styles.register_body} position-relative`}>
+      <div className={`${styles.login_body} position-relative`}>
         <Header />
         <div className={`${styles.side_border_container} d-none d-md-inline col-2 d-flex align-items-center position-absolute end-0 top-0`}> 
           <SideBorder />
@@ -65,7 +62,7 @@ export default function Register() {
                   <label className={`${styles.label} `}>E-mail</label>
                   <div className={`col-12`}>
                     <Input 
-                    placeholder='Escolha seu melhor email' 
+                    placeholder='Insira seu email' 
                     dark={true} 
                     name='email' 
                     type='email'
@@ -73,32 +70,11 @@ export default function Register() {
                   </div>
                 </div>
                 <div className={`${styles.margin_bottom_field} text-center`}>
-                  <label className={`${styles.label} `}>Nome</label>
-                  <div className={`col-12`}>
-                    <Input 
-                    placeholder='Digite seu nome completo' 
-                    dark={true} 
-                    name='name' 
-                    type='text'
-                    required={true}/>
-                  </div>
-                </div>
-                <div className={`${styles.margin_bottom_field} text-center`}>
                   <label className={`${styles.label} `}>Senha</label>
                   <div className={`col-12`}>
                     <PasswordInput 
-                    placeholder='Crie uma senha' 
+                    placeholder='Insira sua senha' 
                     dark={true} name='password' 
-                    type='password'
-                    required={true}/>
-                  </div>
-                </div>
-                <div className={`${styles.margin_bottom_field} text-center`}>
-                  <label className={`${styles.label} `}>Confirme sua senha</label>
-                  <div className={`col-12`}>
-                    <PasswordInput 
-                    placeholder='Repita a senha criada acima' 
-                    dark={true} name='confirm password' 
                     type='password'
                     required={true}/>
                   </div>
@@ -106,8 +82,11 @@ export default function Register() {
               </div>
             </div>
             <div className={`col-12 d-flex justify-content-center`}>
+              <a className={styles.forgot_password}>Esqueci minha senha</a>
+            </div>
+            <div className={`col-12 d-flex justify-content-center`}>
               <div className={`${styles.submit_btn_container}`}>
-                <Button content='Cadastrar' href='/login' type='submit'/>
+                <Button content='Entrar' href='/home' type='submit'/>
               </div>
             </div>
           </form>
