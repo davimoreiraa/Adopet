@@ -104,7 +104,7 @@ export default function Register() {
             </div>
             <div className={`col-12 d-flex justify-content-center`}>
               <div className={`${styles.submit_btn_container}`}>
-                <Button content='Cadastrar' href='/home'/>
+                <Button content='Cadastrar' href='/home' type='submit'/>
               </div>
             </div>
           </form>
