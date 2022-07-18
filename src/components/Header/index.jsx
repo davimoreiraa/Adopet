@@ -21,12 +21,14 @@ export default function Header() {
           <Logo width='128px'/>
         </div>
         <Link href='/home'>
-          <span>
+          <span className={`${styles.icon}`}>
             <CasaIcon/>
           </span>
           </Link>
         <Link href='/'>
-          <MensagemIcon/>
+          <span className={`${styles.icon}`}>
+            <MensagemIcon/>
+          </span>
         </Link>  
       </nav>
     </header>

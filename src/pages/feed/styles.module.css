@@ -1,0 +1,29 @@
+.feed_body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  background-color: var(--background);
+  max-height: 100vh;
+  font-family: Poppins, sans-serif;
+  color: #fff;
+}
+
+.content {
+  padding-top: 10em;
+}
+
+.page_description_container {
+  color: var(--blue);
+}
+
+.page_description {
+  font-size: 16px;
+}
+
+/* --------------- MEDIA QUERY --------------*/
+
+@media only screen and (min-width: 768px) {
+  .page_description {
+    font-size: 18px;
+  }
+}

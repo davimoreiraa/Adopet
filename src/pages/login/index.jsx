@@ -86,7 +86,7 @@ export default function Login() {
             </div>
             <div className={`col-12 d-flex justify-content-center`}>
               <div className={`${styles.submit_btn_container}`}>
-                <Button content='Entrar' href='/home' type='submit'/>
+                <Button content='Entrar' href='/feed' type='submit'/>
               </div>
             </div>
           </form>
