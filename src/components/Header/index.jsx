@@ -1,6 +1,9 @@
 /* ------------------ STYLES -------------------*/
 import styles from './styles.module.css'
 
+/* ------------------ COMPONENTS -------------------*/
+import Link from 'next/link'
+
 /* ------------------ ICONS -------------------*/
 import { BordaTop } from '../../assets/BordaTop'
 import { Logo } from '../../assets/Logo'
@@ -17,8 +20,14 @@ export default function Header() {
         <div className={`${styles.logo_container}`} >
           <Logo width='128px'/>
         </div>
-        <CasaIcon/>
-        <MensagemIcon />
+        <Link href='/home'>
+          <span>
+            <CasaIcon/>
+          </span>
+          </Link>
+        <Link href='/'>
+          <MensagemIcon/>
+        </Link>  
       </nav>
     </header>
   )

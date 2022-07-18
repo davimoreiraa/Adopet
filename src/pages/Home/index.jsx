@@ -36,10 +36,10 @@ export default function Home() {
           <div className={`${styles.side_border_container} col-2 d-flex align-items-center position-absolute end-0 top-0`}> 
             <SideBorder />
           </div>
-        <main className={`${styles.home_content} position-relative `}>
-          <div className={`d-flex justify-content-center`}>
+        <main className={`${styles.home_content} `}>
+          <div className={`d-flex justify-content-center position-relative`}>
             <div className={`col-10 col-sm-8 col-md-5 col-xl-4 col-xxl-3`}>
-              <div className={styles.logo_container}>
+              <div className={`${styles.logo_container} `}>
               <Logo width='100%'/>
               </div>
               <div className={`d-flex justify-content-center`}>
@@ -59,7 +59,7 @@ export default function Home() {
           </div>
           <div className={`d-flex justify-content-center`}>
             <div className={`${styles.btn_container} shadow col-8 col-sm-6 col-md-4 col-xl-3`}>
-              <Button content='Quero me cadastrar' href='/register' type='button'/>
+              <Button content='Quero me cadastrar' href='/register'/>
             </div>
           </div>
         </main>
