@@ -30,6 +30,11 @@ export default function Feed() {
               </h1>
             </div>
           </div>
+          <div className={`${styles.animals_list_container} col-12`}>
+            <div className={`container`}>
+              
+            </div>
+          </div>
         </main>
         <div className={` position-absolute bottom-0`}>
           <Footer />
