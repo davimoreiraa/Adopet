@@ -51,6 +51,11 @@
   margin-bottom: 6px;
 }
 
+.submit_btn_container {
+  width: 150px;
+  margin-bottom: 30px;
+}
+
 @media only screen and (min-width: 768px) {
   .patas_container {
     width: 184px;
