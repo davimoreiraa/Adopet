@@ -46,14 +46,14 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className={`d-flex justify-content-center`}>
+          <div className={`d-flex justify-content-center position-relative`}>
             <div className={`${styles.btn_container} shadow col-8 col-sm-6 col-md-4 col-xl-3`}>
-              <Button content='Já tenho conta' href='/login' type='button'/>
+              <Button content='Já tenho conta' href='/login' type='button' crossorigin/>
             </div>
           </div>
-          <div className={`d-flex justify-content-center`}>
+          <div className={`d-flex justify-content-center position-relative`}>
             <div className={`${styles.btn_container} shadow col-8 col-sm-6 col-md-4 col-xl-3`}>
-              <Button content='Quero me cadastrar' href='/register'/>
+              <Button content='Quero me cadastrar' href='/register' crossorigin/>
             </div>
           </div>
         </main>

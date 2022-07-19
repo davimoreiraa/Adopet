@@ -6,7 +6,7 @@ import Link from 'next/link'
 
 export default function Button(props) {
   return (
-    <Link href={props.href} >
+    <Link href={props.href} crossorigin>
       <button className={`${styles.btn_container} rounded-3`} type={props.type}>
         {props.content}
       </button>

@@ -7,7 +7,8 @@
 }
 
 .content {
-  padding-top: 10em;
+  padding-top: 100px;
+  padding-bottom: 80px;
 }
 
 .page_description_container {
@@ -17,6 +18,10 @@
 .page_description {
   font-size: 16px;
   margin-bottom: 32px;
+}
+
+.animals_list_container {
+  margin-bottom: 34px;
 }
 
 /* --------------- MEDIA QUERY --------------*/

@@ -18,6 +18,10 @@
   }
 }
 
+.icon {
+  cursor: pointer;
+}
+
 @media only screen and (max-width: 315px) {
   .icons_container {
     margin-top: 28px;

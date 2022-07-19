@@ -34,10 +34,10 @@ export default function Login() {
         <div className={`${styles.patas_container} position-absolute top-0 end-0`}>
           <Patas />
         </div>
-        <main className={`${styles.content} position-relative`}>
+        <main className={`${styles.content}`}>
           <div className={`text-center d-flex justify-content-center`}>
             <div className={`${styles.container} col-10 col-sm-7 col-md-5 col-xl-4`}>
-              <div className={styles.logo_container}>
+              <div className={`${styles.logo_container} position-relative`}>
                 <LogoAzul width='100%'/>
               </div>
               <div className={`d-flex justify-content-center`}>

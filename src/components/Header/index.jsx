@@ -24,8 +24,8 @@ export default function Header() {
           <span className={`${styles.icon}`}>
             <CasaIcon/>
           </span>
-          </Link>
-        <Link href='/'>
+        </Link>
+        <Link href='/login'>
           <span className={`${styles.icon}`}>
             <MensagemIcon/>
           </span>

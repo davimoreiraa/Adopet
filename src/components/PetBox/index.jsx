@@ -9,7 +9,7 @@ import Image from 'next/image'
 
 export default function PetBox(props) {
   return (
-    <div className={`${styles.pet_box_container} rounded-3 col-12 col-sm-7 col-md-3 col-lg-4 col-xl- d-flex align-items-center justify-content-center `}>
+    <div className={`${styles.pet_box_container} rounded-3 col-12 col-sm-8 col-md-5 col-xxl-3 d-flex align-items-center justify-content-center `}>
       <div className={`${styles.pet_picture_container} d-flex`}>
         <Image src={props.img_src} alt={props.img_alt} layout='intrinsic'/>
       </div>

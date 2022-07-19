@@ -29,7 +29,7 @@ export default function Feed() {
             </div>
           </div>
           <div className={`d-flex justify-content-center`}>
-            <div className={`${styles.animals_list_container} container col-12 row row-cols-md-2 row-cols-lg-3`}>
+            <div className={`${styles.animals_list_container} d-flex justify-content-center gap-3 col-12 row row-cols-md-2 row-cols-lg-3`}>
               <PetBox 
               img_src={amora} 
               img_alt='Foto da amora' 
@@ -69,7 +69,7 @@ export default function Feed() {
             </div>
           </div>
         </main>
-        <div className={` position-absolute bottom-0 `}>
+        <div className={`position-absolute bottom-0 `}>
           <Footer />
         </div>
       </div>
