@@ -9,6 +9,14 @@ import Footer from '../../components/Footer'
 
 /* ------------------ IMAGES -------------------*/
 import amora from '../../assets/dogs-picture/amora.png'
+import amora from '../../assets/dogs-picture/amora.png'
+import amora from '../../assets/dogs-picture/amora.png'
+import amora from '../../assets/dogs-picture/amora.png'
+import amora from '../../assets/dogs-picture/amora.png'
+import amora from '../../assets/dogs-picture/amora.png'
+import amora from '../../assets/dogs-picture/amora.png'
+import amora from '../../assets/dogs-picture/amora.png'
+import amora from '../../assets/dogs-picture/amora.png'
 
 export default function Feed() {
   return (
@@ -20,15 +28,15 @@ export default function Feed() {
       </Head>
       <div className={`${styles.feed_body} position-relative`}>
         <Header/>
-        <main className={`${styles.content} position-relative`}>
-          <div className={`${styles.page_description_container} d-flex justify-content-center`}>
+        <main className={`${styles.content} `}>
+          <div className={`${styles.page_description_container} position-relative d-flex justify-content-center`}>
             <div className={`col-10 col-sm-9 col-md-6 text-center d-flex justify-content-center`}>
               <h1 className={`${styles.page_description} `}>
                 Olá! Veja os amigos disponíveis para adoção!
               </h1>
             </div>
           </div>
-          <div className={`d-flex justify-content-center`}>
+          <div className={`d-flex justify-content-center position-relative`}>
             <div className={`${styles.animals_list_container} d-flex justify-content-center gap-3 col-12 row row-cols-md-2 row-cols-lg-3`}>
               <PetBox 
               img_src={amora} 
