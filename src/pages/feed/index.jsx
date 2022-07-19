@@ -4,7 +4,11 @@ import styles from './styles.module.css'
 /* ------------------ COMPONENTS -------------------*/
 import Head from 'next/head'
 import Header from '../../components/Header'
+import PetBox from '../../components/PetBox'
 import Footer from '../../components/Footer'
+
+/* ------------------ IMAGES -------------------*/
+import amora from '../../assets/dogs-picture/amora.png'
 
 export default function Feed() {
   return (
@@ -13,12 +17,6 @@ export default function Feed() {
         <title>Adopet 🐶</title>
         <meta name="description" content="Adoption pets website" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
-          rel="stylesheet"
-        />
       </Head>
       <div className={`${styles.feed_body}`}>
         <Header/>
@@ -30,10 +28,36 @@ export default function Feed() {
               </h1>
             </div>
           </div>
-          <div className={`${styles.animals_list_container} col-12`}>
-            <div className={`container`}>
-              
-            </div>
+          <div className={`${styles.animals_list_container} col-12 d-flex justify-content-center`}>
+              <div className={`col-12 col-sm-7 col-md-6 col-lg-5 col-xl-4`}>
+                <PetBox 
+                img_src={amora} 
+                img_alt='Foto da amora' 
+                name='Amora'
+                age='45 dias'
+                size='Porte grande'
+                behavior='Calma e carinhosa'
+                localization='São Gonçalo (RJ)'
+                />
+                <PetBox 
+                img_src={amora} 
+                img_alt='Foto da amora' 
+                name='Amora'
+                age='45 dias'
+                size='Porte grande'
+                behavior='Calma e carinhosa'
+                localization='São Gonçalo (RJ)'
+                />
+                <PetBox 
+                img_src={amora} 
+                img_alt='Foto da amora' 
+                name='Amora'
+                age='45 dias'
+                size='Porte grande'
+                behavior='Calma e carinhosa'
+                localization='São Gonçalo (RJ)'
+                />
+              </div>
           </div>
         </main>
         <div className={` position-absolute bottom-0`}>
