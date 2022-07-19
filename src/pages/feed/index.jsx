@@ -27,7 +27,7 @@ export default function Feed() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <div className={`${styles.feed_body} position-relative`}>
-        <Header/>
+        <Header profile={true}/>
         <main className={`${styles.content} `}>
           <div className={`${styles.page_description_container} position-relative d-flex justify-content-center`}>
             <div className={`col-10 col-sm-9 col-md-6 text-center d-flex justify-content-center`}>
@@ -37,7 +37,7 @@ export default function Feed() {
             </div>
           </div>
           <div className={`d-flex justify-content-center position-relative`}>
-            <div className={`${styles.animals_list_container} d-flex justify-content-center gap-3 col-12 row row-cols-md-2 row-cols-lg-3`}>
+            <div className={`${styles.animals_list_container} d-flex justify-content-center col-11  gap-3 row row-cols-md-2 row-cols-lg-3`}>
               <PetBox 
               img_src={dunga} 
               img_alt='Foto do dunga' 

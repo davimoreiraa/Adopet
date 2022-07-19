@@ -24,7 +24,7 @@ export default function Login() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <div className={`${styles.login_body} position-relative`}>
-        <Header />
+        <Header  profile={false}/>
         <div className={`${styles.side_border_container} d-none d-md-inline col-2 d-flex align-items-center position-absolute end-0 top-0`}> 
           <SideBorder />
         </div>

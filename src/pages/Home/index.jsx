@@ -21,7 +21,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <div className={`${styles.home_body} position-relative`}>
-        <Header/>
+        <Header profile={false}/>
         <div className={`${styles.animals_container} col-12 position-absolute d-flex justify-content-center`}>
           <div className={`col-5 col-sm-4 col-md-3 col-xl-2`}>
             <Animais />

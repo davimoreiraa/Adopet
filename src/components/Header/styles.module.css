@@ -22,6 +22,15 @@
   cursor: pointer;
 }
 
+.dnone {
+  display: none;
+}
+
+.profile_container {
+  padding-top: 1.8em ;
+  padding-right: 1.8em ;
+}
+
 @media only screen and (max-width: 315px) {
   .icons_container {
     margin-top: 28px;
