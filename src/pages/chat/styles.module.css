@@ -25,6 +25,19 @@
   background-color: var(--white);
 }
 
+.message_input {
+  width: 100%;
+  height: 170px;
+  font-size: 0.9em;
+  background-color: #fff;
+  color: black;
+  border: none;
+}
+
+.message_input::placeholder {
+  font-size: 0.9rem;
+}
+
 .color_blue {
   color: var(--blue);
   font-size: 16px;

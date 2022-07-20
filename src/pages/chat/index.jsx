@@ -64,13 +64,7 @@ export default function chat() {
                 </div>
                 <label className={`${styles.color_blue}`}>Mensagem</label>
                 <div className={`${styles.margin_bottom} position-relative`}>
-                  <Input 
-                  placeholder='Escreva sua mensagem.'
-                  dark={false}
-                  name="message"
-                  type='text'
-                  required={true}
-                  />
+                  <input className={`${styles.message_input} shadow-sm rounded`} placeholder='Escreva sua mensagem.' type="text" name='message' required={true}/>
                 </div>
                 <div className={`${styles.margin_top} d-flex justify-content-center `}>
                   <div className={`col-3`}>
