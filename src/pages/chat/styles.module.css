@@ -6,6 +6,11 @@
   color: #fff;
 }
 
+.side_border_container {
+  height: 100vh;
+  width: 90px;
+}
+
 .content {
   padding-top: 100px;
   padding-bottom: 80px;

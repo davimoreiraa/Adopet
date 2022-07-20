@@ -7,6 +7,9 @@ import Header from '../../components/Header'
 import PetBox from '../../components/PetBox'
 import Footer from '../../components/Footer'
 
+/* ------------------ ICONS -------------------*/
+import { SideBorder } from '../../assets/SideBorder'
+
 /* ------------------ IMAGES -------------------*/
 import amora from '../../assets/dogs-picture/amora.png'
 import dunga from '../../assets/dogs-picture/dunga.png'
@@ -27,6 +30,9 @@ export default function Feed() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <div className={`${styles.feed_body} position-relative`}>
+        <div className={`${styles.side_border_container} d-none d-xl-inline d-flex align-items-center position-absolute end-0 top-0`}> 
+          <SideBorder />
+        </div>
         <Header profile={true}/>
         <main className={`${styles.content} `}>
           <div className={`${styles.page_description_container} position-relative d-flex justify-content-center`}>
