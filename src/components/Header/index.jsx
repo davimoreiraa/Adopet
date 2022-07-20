@@ -26,7 +26,7 @@ export default function Header(props) {
               <CasaIcon/>
             </span>
           </Link>
-          <Link href='/login'>
+          <Link href='/chat'>
             <span className={`${styles.icon}`}>
               <MensagemIcon/>
             </span>

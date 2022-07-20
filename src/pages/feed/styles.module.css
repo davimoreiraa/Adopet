@@ -11,11 +11,8 @@
   padding-bottom: 80px;
 }
 
-.page_description_container {
-  color: var(--blue);
-}
-
 .page_description {
+  color: var(--blue);
   font-size: 16px;
   margin-bottom: 32px;
 }

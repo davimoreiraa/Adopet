@@ -1,0 +1,36 @@
+.chat_body {
+  width: 100vw;
+  background-color: var(--background);
+  min-height: 100vh;
+  font-family: Poppins, sans-serif;
+  color: #fff;
+}
+
+.content {
+  padding-top: 100px;
+  padding-bottom: 80px;
+}
+
+.description {
+  color: var(--blue);
+  font-size: 18px;
+}
+
+.form {
+  background-color: var(--white);
+}
+
+.color_blue {
+  color: var(--blue);
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.margin_bottom {
+  margin-bottom: 16px;
+}
+
+.margin_top {
+  margin-top: 26px;
+}

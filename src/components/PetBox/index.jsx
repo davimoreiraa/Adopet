@@ -24,7 +24,7 @@ export default function PetBox(props) {
           <li>{props.behavior}</li>
         </ul>
         <div className={styles.container}>
-          <Link href='/Talk' crossorigin>
+          <Link href='/chat' crossorigin>
             <div>
               <p className={styles.localization}>{props.localization}</p> 
                 <span className={styles.chat_icon}><ChatIcon/> Falar com responsável</span>
