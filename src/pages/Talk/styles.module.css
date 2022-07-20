@@ -1,0 +1,7 @@
+.talk_body {
+  width: 100vw;
+  background-color: var(--background);
+  min-height: 100vh;
+  font-family: Poppins, sans-serif;
+  color: #fff;
+}

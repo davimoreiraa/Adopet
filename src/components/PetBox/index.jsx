@@ -6,6 +6,7 @@ import ChatIcon from '../../assets/Chat_icon'
 
 /* ------------------ COMPONENTS -------------------*/
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function PetBox(props) {
   return (
@@ -23,8 +24,12 @@ export default function PetBox(props) {
           <li>{props.behavior}</li>
         </ul>
         <div className={styles.container}>
-          <p className={styles.localization}>{props.localization}</p> 
-            <span className={styles.chat_icon}><ChatIcon/> Falar com responsável</span>
+          <Link href='/Talk' crossorigin>
+            <div>
+              <p className={styles.localization}>{props.localization}</p> 
+                <span className={styles.chat_icon}><ChatIcon/> Falar com responsável</span>
+            </div>
+          </Link>
         </div>
       </div>
     </div>
