@@ -55,7 +55,7 @@ export default function Register() {
           <form id='creat_account_form'>
             <div className={`col-12 d-flex justify-content-center`}>
               <div className={`col-10 col-sm-8 col-md-7 col-lg-6 col-xl-5 col-xxl-4`}>
-                <div className={`${styles.margin_bottom_field} text-center`}>
+                <div className={`${styles.margin_bottom_field} position-relative text-center`}>
                   <label className={`${styles.label} `}>E-mail</label>
                   <div className={`col-12`}>
                     <Input 
@@ -66,7 +66,7 @@ export default function Register() {
                     required={true}/>
                   </div>
                 </div>
-                <div className={`${styles.margin_bottom_field} text-center`}>
+                <div className={`${styles.margin_bottom_field} position-relative text-center`}>
                   <label className={`${styles.label} `}>Nome</label>
                   <div className={`col-12`}>
                     <Input 
@@ -77,7 +77,7 @@ export default function Register() {
                     required={true}/>
                   </div>
                 </div>
-                <div className={`${styles.margin_bottom_field} text-center`}>
+                <div className={`${styles.margin_bottom_field} position-relative text-center`}>
                   <label className={`${styles.label} `}>Senha</label>
                   <div className={`col-12`}>
                     <PasswordInput 
@@ -87,7 +87,7 @@ export default function Register() {
                     required={true}/>
                   </div>
                 </div>
-                <div className={`${styles.margin_bottom_field} text-center`}>
+                <div className={`${styles.margin_bottom_field} position-relative text-center`}>
                   <label className={`${styles.label} `}>Confirme sua senha</label>
                   <div className={`col-12`}>
                     <PasswordInput 
