@@ -30,7 +30,7 @@ export default function Header(props) {
           <div className={`${styles.logo_container}`} >
             <Logo width='128px'/>
           </div>
-          <Link href='/home'>
+          <Link href='/Home'>
             <span className={`${styles.icon}`}>
               <CasaIcon/>
             </span>
