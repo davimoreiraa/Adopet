@@ -50,7 +50,7 @@ export default function Profile() {
                 </div>
               </div>
               <div className={`d-flex justify-content-center`}>
-                <a className={styles.forgot_password}>Esqueci minha senha</a>
+                <a className={styles.forgot_password}>Trocar foto de perfil</a>
               </div>
               <div className={styles.gap}>
                 <label className={styles.color_blue}>Nome</label>

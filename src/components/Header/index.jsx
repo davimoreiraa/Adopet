@@ -20,7 +20,7 @@ export default function Header(props) {
         <div className={`col-12 position-absolute top-0 d-flex justify-content-end`}>
           <div className={`${props.profile ? '' : styles.dnone} ${styles.profile_container}`}>
             <Link href='/profile'>
-              <span>
+              <span className={styles.profile_btn}>
                 <Profile />
               </span>
             </Link>
