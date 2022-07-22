@@ -66,7 +66,7 @@ export default function chat() {
                 <div className={`${styles.margin_bottom} position-relative`}>
                   <input className={`${styles.message_input} shadow-sm rounded`} placeholder='Escreva sua mensagem.' type="text" name='message' required={true}/>
                 </div>
-                <div className={`${styles.margin_top} d-flex justify-content-center `}>
+                <div className={`${styles.margin_top} ${styles.margin_bottom} d-flex justify-content-center `}>
                   <div className={`col-3`}>
                     <Button content='Enviar' href='/'/>
                   </div>
