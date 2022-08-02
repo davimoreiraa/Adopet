@@ -25,8 +25,9 @@ export default function Register() {
     const email = document.querySelector('#email').value
     const name = document.querySelector('#name').value
     const password = document.querySelector('#password').value
+    const confirm = document.querySelector('#confirm').value
 
-    if(email != '' && name != '' && password != '') {
+    if(email != '' && name != '' && password != '' && password == confirm) {
       setInputsAreOk(true)
     }
     else {
@@ -119,6 +120,7 @@ export default function Register() {
                     dark={true} name='confirm password' 
                     type='password'
                     required={true}
+                    id='confirm'
                     change={checkFields}
                     />
                   </div>
@@ -127,7 +129,7 @@ export default function Register() {
             </div>
             <div className={`col-12 d-flex justify-content-center`}>
               <div className={`${styles.submit_btn_container}`}>
-                <Button content='Cadastrar' href='/register' type='submit' click={checkFields} />
+                <Button content='Cadastrar' href='/register' type='submit' submitIsOk={inputsAreOk} />
               </div>
             </div>
           </form>
