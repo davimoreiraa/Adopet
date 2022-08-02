@@ -19,6 +19,21 @@ import { LeftBorder } from '../../assets/LeftBorder'
 import { LogoAzul } from '../../assets/LogoAzul'
 
 export default function Register() {
+  const [inputsAreOk, setInputsAreOk] = useState(false)
+
+  function checkFields() {
+    const email = document.querySelector('#email').value
+    const name = document.querySelector('#name').value
+    const password = document.querySelector('#password').value
+
+    if(email != '' && name != '' && password != '') {
+      setInputsAreOk(true)
+    }
+    else {
+      setInputsAreOk(false)
+    }
+    console.log(inputsAreOk)
+  }
   return (
     <div>
       <Head>
@@ -52,7 +67,7 @@ export default function Register() {
               </div>
             </div>
           </div>
-          <form id='creat_account_form'>
+          <form id='creat_account_form' onSubmit={checkFields}>
             <div className={`col-12 d-flex justify-content-center`}>
               <div className={`col-10 col-sm-8 col-md-7 col-lg-6 col-xl-5 col-xxl-4`}>
                 <div className={`${styles.margin_bottom_field} position-relative text-center`}>
@@ -62,8 +77,11 @@ export default function Register() {
                     placeholder='Escolha seu melhor email' 
                     dark={true} 
                     name='email' 
+                    id='email'
                     type='email'
-                    required={true}/>
+                    required={true}
+                    change={checkFields}
+                    />
                   </div>
                 </div>
                 <div className={`${styles.margin_bottom_field} position-relative text-center`}>
@@ -72,9 +90,12 @@ export default function Register() {
                     <Input 
                     placeholder='Digite seu nome completo' 
                     dark={true} 
+                    id='name'
                     name='name' 
                     type='text'
-                    required={true}/>
+                    required={true}
+                    change={checkFields}
+                    />
                   </div>
                 </div>
                 <div className={`${styles.margin_bottom_field} position-relative text-center`}>
@@ -84,7 +105,10 @@ export default function Register() {
                     placeholder='Crie uma senha' 
                     dark={true} name='password' 
                     type='password'
-                    required={true}/>
+                    required={true}
+                    id='password'
+                    change={checkFields}
+                    />
                   </div>
                 </div>
                 <div className={`${styles.margin_bottom_field} position-relative text-center`}>
@@ -94,14 +118,16 @@ export default function Register() {
                     placeholder='Repita a senha criada acima' 
                     dark={true} name='confirm password' 
                     type='password'
-                    required={true}/>
+                    required={true}
+                    change={checkFields}
+                    />
                   </div>
                 </div>
               </div>
             </div>
             <div className={`col-12 d-flex justify-content-center`}>
               <div className={`${styles.submit_btn_container}`}>
-                <Button content='Cadastrar' href='/login' type='submit'/>
+                <Button content='Cadastrar' href='/register' type='submit' click={checkFields} />
               </div>
             </div>
           </form>

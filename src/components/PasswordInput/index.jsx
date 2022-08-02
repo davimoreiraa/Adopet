@@ -18,6 +18,8 @@ export default function Input(props) {
         type={showPassword ? 'password' : 'text'}
         name={props.name}
         required={props.required}
+        id={props.id}
+        onChange={props.change}
         />
         <span className={`${styles.eye_icon} position-absolute`} 
         onClick={() => { setShowPassword(!showPassword) }}>
