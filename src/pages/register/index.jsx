@@ -33,7 +33,6 @@ export default function Register() {
     else {
       setInputsAreOk(false)
     }
-    console.log(inputsAreOk)
   }
   return (
     <div>
@@ -68,7 +67,7 @@ export default function Register() {
               </div>
             </div>
           </div>
-          <form id='creat_account_form' onSubmit={checkFields}>
+          <form id='creat_account_form'>
             <div className={`col-12 d-flex justify-content-center`}>
               <div className={`col-10 col-sm-8 col-md-7 col-lg-6 col-xl-5 col-xxl-4`}>
                 <div className={`${styles.margin_bottom_field} position-relative text-center`}>
@@ -129,7 +128,11 @@ export default function Register() {
             </div>
             <div className={`col-12 d-flex justify-content-center`}>
               <div className={`${styles.submit_btn_container}`}>
-                <Button content='Cadastrar' href='/register' type='submit' submitIsOk={inputsAreOk} />
+                <Button 
+                content='Cadastrar' 
+                href={inputsAreOk ? '/feed' : '/register'} 
+                type='submit' 
+                enabled={inputsAreOk}/>
               </div>
             </div>
           </form>

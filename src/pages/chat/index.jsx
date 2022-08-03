@@ -68,7 +68,7 @@ export default function chat() {
                 </div>
                 <div className={`${styles.margin_top} ${styles.margin_bottom} d-flex justify-content-center `}>
                   <div className={`col-3`}>
-                    <Button content='Enviar' href='/'/>
+                    <Button content='Enviar' href='/' enabled={true}/>
                   </div>
                 </div>
               </form>

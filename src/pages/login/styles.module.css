@@ -59,6 +59,7 @@
 
 .forgot_password:hover {
   color: var(--coral);
+  cursor: pointer;
 }
 
 .submit_btn_container {

@@ -94,7 +94,7 @@ export default function Profile() {
               </div>
               <div className={`${styles.margin_top} d-flex justify-content-center `}>
                 <div className={`${styles.btn_container} col-3`}>
-                  <Button content='Salvar' href='/'/>
+                  <Button content='Salvar' href='/' enabled={true}/>
                 </div>
               </div>
             </form>

@@ -1,6 +1,9 @@
 /* ------------------ STYLES -------------------*/
 import styles from './styles.module.css'
 
+/* ------------------ RESOURCES -------------------*/
+import { useState } from 'react'
+
 /* ------------------ COMPONENTS -------------------*/
 import Head from 'next/head'
 import Header from '../../components/Header'
@@ -16,6 +19,20 @@ import { LeftBorder } from '../../assets/LeftBorder'
 import { LogoAzul } from '../../assets/LogoAzul'
 
 export default function Login() {
+  const [inputsAreOk, setInputsAreOk] = useState(false)
+
+  function checkFields() {
+    const email = document.querySelector('#email').value
+    const password = document.querySelector('#password').value
+
+    if(email != ''  && password != '') {
+      setInputsAreOk(true)
+    }
+    else {
+      setInputsAreOk(false)
+    }
+  }
+
   return (
     <div>
       <Head>
@@ -60,6 +77,8 @@ export default function Login() {
                     dark={true} 
                     name='email' 
                     type='email'
+                    id='email'
+                    change={checkFields}
                     required={true}/>
                   </div>
                 </div>
@@ -70,17 +89,25 @@ export default function Login() {
                     placeholder='Insira sua senha' 
                     dark={true} name='password' 
                     type='password'
-                    required={true}/>
+                    required={true}
+                    change={checkFields}
+                    id='password'
+                    />
                   </div>
                 </div>
               </div>
             </div>
-            <div className={`col-12 d-flex justify-content-center`}>
+            <div className={`col-12 d-flex justify-content-center position-relative`}>
               <a className={styles.forgot_password}>Esqueci minha senha</a>
             </div>
             <div className={`col-12 d-flex justify-content-center`}>
               <div className={`${styles.submit_btn_container}`}>
-                <Button content='Entrar' href='/feed' type='submit'/>
+                <Button 
+                content='Entrar' 
+                href={inputsAreOk ? '/feed' : '/login'} 
+                type='submit'
+                enabled={inputsAreOk}
+                />
               </div>
             </div>
           </form>
