@@ -1,4 +1,4 @@
-<h1>Plataforma de adoção de animais Adopet 🐶</h1>
+<h1>Plataforma de adoção de animais Adopet </h1>
 <h2>Descrição</h2>
 <p style='font-size:16px'>Projeto desenvolvido para compor meu repositório. O design foi desenvolvido pela Alura para um evento voltado para o front-end.</p>
 <hr />

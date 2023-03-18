@@ -19,7 +19,7 @@ export default function Profile() {
   return (
     <div>
       <Head>
-        <title>Adopet 🐶 | Perfil </title>
+        <title>Adopet  | Perfil </title>
         <meta name="description" content="Adoption pets website" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>

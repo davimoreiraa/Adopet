@@ -37,7 +37,7 @@ export default function Register() {
   return (
     <div>
       <Head>
-        <title>Adopet 🐶 | Registrar</title>
+        <title>Adopet  | Registrar</title>
         <meta name="description" content="Adoption pets website" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
