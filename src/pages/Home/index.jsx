@@ -40,9 +40,9 @@ export default function Home() {
                 <h2 className={`${styles.welcome_msg}`}>Boas-vindas</h2>
               </div>
               <div className={`text-center d-flex justify-content-center`}>
-                <p className={styles.description}>
+                <h1 className={styles.description}>
                   Adotar pode mudar uma vida. Que tal buscar seu novo melhor amigo hoje? Vem com a gente!
-                </p>
+                </h1>
               </div>
             </div>
           </div>

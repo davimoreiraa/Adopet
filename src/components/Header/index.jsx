@@ -15,7 +15,7 @@ export default function Header(props) {
   return (
     <header className={`${styles.header_body} position-absolute top-0 start-0`}>
       <div className={`${styles.border_container} col-10 col-sm-7 col-lg-5 col-xl-4`} >
-        <h1><BordaTop/></h1>
+        <div><BordaTop/></div>
       </div>
         <div className={`col-12 position-absolute top-0 d-flex justify-content-end`}>
           <div className={`${props.profile ? '' : styles.dnone} ${styles.profile_container}`}>

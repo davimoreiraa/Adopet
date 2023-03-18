@@ -17,6 +17,7 @@ class MyDocument extends Document {
             rel="stylesheet"
           />
           <link rel="icon" type="image/x-icon" href="/dog.png"/>
+          <meta name="description" content="Encontre o companheiro peludo perfeito em nosso site de adoção de animais de estimação. Navegue pela nossa ampla seleção de cães, gatos e outros animais de estimação disponíveis para adoção e dê um lar amoroso a um animal necessitado. Nosso processo de adoção é fácil e livre de estresse. Comece sua jornada para encontrar seu novo melhor amigo hoje mesmo!" />
         </Head>
         <body>
           <Main />
